@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+  
+  
+  <script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      	 token: "7a8ec328-0440-4d45-9c59-53abf96e2d15",
+	 host: "https://fintechbluesolutionsprivatelimited.freshchat.com",
+	 widgetUuid: "279e87df-c589-416c-a79c-6648deab96b4"
+    });
+    window.fcWidget.conversation.setBotVariables({	
+   broker: "turtlemint",
+   dpNo: "1585933",
+   envLink: "blade",
+   rmEmailId: "mail@sd.asd",
+   rmName: "",
+   tenant: "turtlemint",
+   token: "1234",
+   type: "chatbot",
+   partnerName:"asim",
+   origin:"origin",
+   description:"checking",
+   type:"NEW_USER",
+   xtrnlTcktId:"5196a5f8-3fad-4bfa-9e50-fe770499d50e",
+   partnerId:"6360ee41703c6c6bdfa0b70b", 
+   subCategoryKey	:"verification",
+   partnerMobileNumber	:"7025357097",
+   partnerEmailId	:"ahammed.asim@turtlemint.com"
+      //status property is passed to the widget	
+            });
+  }
+ function initialize(i,t){var e;i.getElementById(t)?
+  initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,
+  e.src="https://fintechbluesolutionsprivatelimited.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
+  function initiateCall(){initialize(document,"Freshchat-js-sdk")}
+  window.addEventListener?window.addEventListener("load",initiateCall,!1):
+  window.attachEvent("load",initiateCall,!1);
+</script>
+<body>
+  
+
+</body>
+</html>
